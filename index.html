@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="active" onclick="changeTab('profile')">Sobre mim</li>
+        <li onclick="changeTab('portfolio')">Portfolio</li>
+        <li onclick="changeTab('contact')">Contato</li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="profile" class="tab-content">
+    <img src="assets/eu.jpg" alt="Eu">
+    <h2>Sobre mim</h2>
+    <p> Cursei ensino médio na escola alemã corcovado (EAC) no Rio de Janeiro onde tive um aprendizado excelente em alemão e inglês. 
+        Depois decidi me mudar para Recife com a oportunidade de estudar na UFPE. 
+        Estou atualmente cursando Engenharia da Computação na UFPE e estou no meu oitavo período.</p>
+    <p> Ao longo do curso aprendi diversos temas na área de computação, desde programação oritentada
+         a ojetos, infraestrutura de hardware e software até eletrônica e machine learning. Fiz parte de uma iniciação científica por dois 
+         anos voltada para o desenvolvimento de técnicas de machine learning a serem utilizadas na área 
+         de cibersecurity em parceria com a empresa de cybersegurança de Recife, Tempest. 
+         Hoje em dia tenho maior interesse na área de machine
+          learning com ciência de dados e na área de eletrônica. Apesar disso, sou uma pessoa que sempre gosta de tentar coisas novas e,
+           por conta disso, não me limito à esses campos somente.</p>
+  </section>
+  
+  <section id="portfolio" class="tab-content" style="display: none;">
+    <h2>Projects</h2>
+    <p> Aqui vou colocar uns destaques de projetos dos quais me orgulho ter feito.</p>
+    
+    <div class="project">
+      <h3> Path Finder </h3>
+      <video controls>
+        <source src="assets/path_finder.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p>Esse projeto foi desenvolvido ,em grupo, na disciplina
+         de Sistemas Inteligentes. Nele é gerado um ambiente 
+         aleatóriamente, utilizando-se de ruído de perlin, onde 
+         existem diferentes tipos de chão, um agente e uma comida
+          para o agente pegar. Nesse projeto, cada chão tem um 
+          custo diferente para ser atravessado, a água é o mais 
+          custoso, depois a lama e por fim a areia é menos custosa.
+           Depois de criar essas condições, tivemos que implementar 
+           diferentes tipos de algoritmos de busca para o agente 
+           usar com a intenção de encontrar a comida e percorrer o 
+           caminho determinado pelo algoritmo. Aqui eu aprofundei 
+           bastante o meu conhecimento acerca desses algoritmos de 
+           busca e também aprendi a utiliza a biblioteca p5js de 
+           javascript, onde o projeto foi feito por completo.</p>
+        <a href="https://github.com/caio-mbarbosa/Pathfinder-Visualization"> Link do projeto </a>
+    </div>
+    
+    <div class="project">
+      <h3> Controlador de motor via infravermelho - projeto de eletrônica </h3>
+      <video controls>
+        <source src="assets/projetoMotor.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p> Esse projeto foi feito na disciplina de eletrônica. 
+        Nesse projeto tinhamos a intenção, de início, de criar 
+        um carrinho de controle remoto infravermelho. Mas, 
+        como no laboratório da faculdade não havia os 
+        materiais necessários, decidimos simplificar um 
+        pouco e realizar um controle de um motor 6V via 
+        infravermelho com uma ponte H e capacidade de 
+        rotação nos dois sentidos.</p>
+        <a href="https://drive.google.com/drive/folders/1h78PkkTfxgBATMiKYvWxtRIPiutHjhRE?usp=sharing"> Link para material do projeto</a>
+    </div>
+
+    <div class="project">
+        <h3> Site de Delivery </h3>
+        <video controls>
+            <source src="assets/projetoDelivery.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <p> Esse projeto foi feito em grupo na disciplina de engenharia
+             de software e sistemas, onde aprendi bastante sobre 
+             metodologias de desenvolvimento e sobre desenvolvimento 
+             web. Nesse projeto eu fiquei principalmente responsável 
+             por realizar a automação de alguns testes, como demostrado 
+             no vídeo, para comprovar o funcionamento do site.</p>
+             <a href="https://github.com/caio-mbarbosa/ess-delivery-app/tree/master"> Link do projeto </a>
+    </div>
+
+    <div class="project">
+        <h3> Simulador de capacidor com método dos elementos finitos </h3>
+        <a href="https://github.com/caio-mbarbosa/capacitor1Dsimulator/blob/master/Capacitor1DSim.ipynb"> Notebook do projeto</a>
+        <p>Nesse projeto da disciplina de eletromagnetismo, feito individualmente, eu coloquei em prática o método dos elementos finitos para aproximar a capacitânica em uma dimensão </p>
+        <a href="https://github.com/caio-mbarbosa/capacitor1Dsimulator"> Link do projeto </a>
+    </div>
+    <!-- Add more project divs as needed -->
+    <p> Os códigos fonte e outros projetos que fiz constam no meu <a href="https://github.com/caio-mbarbosa">github</a> </p>
+    
+  </section>
+
+  <section id="contact" class="tab-content" style="display: none;">
+    <h2>Contato</h2>
+    <p>Email : cmb2@cin.ufpe.br</p>
+    <p><a href="https://www.linkedin.com/in/caio-mendon%C3%A7a-barbosa-917815240/">Linkedin</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 all rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
