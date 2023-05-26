@@ -45,7 +45,15 @@ body {
     padding-right: 10%;
   }
   
+  .project h3::before {
+    content: "►";
+    display: inline-block;
+    margin-right: 5px;
+  }
+
   .project h3 {
+    padding: 20px;
+    color: rgb(46, 45, 45);
     margin-top: 10px;
     margin-bottom: 5px;
   }
