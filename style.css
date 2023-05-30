@@ -1,3 +1,27 @@
+ul.nav-bar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.nav-bar li {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+ul.nav-bar li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -5px;
+  height: 100%;
+  border-right: 7px solid rgb(0, 0, 0);
+}
+
 body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     font-size: 16px;
@@ -33,6 +57,11 @@ body {
     margin-bottom: 10%;
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .tab-content img{
+    max-height: 50%;
+    max-width: 35%;
   }
 
   .project {
